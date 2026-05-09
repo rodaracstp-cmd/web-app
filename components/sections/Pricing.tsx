@@ -1,57 +1,71 @@
 "use client";
 
 import Image from "next/image";
-import { fleet } from "@/data/fleet";
 import { formatCurrency, cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 
 const plans = [
   {
-    name: "Economy",
-    description: "Perfect for city driving and daily commutes",
-    dailyRate: 29,
-    weeklyRate: 175,
+    name: "Compact",
+    description: "Ideal for getting around the city and short trips",
+    dailyRate: 25,
+    weeklyRate: 150,
     features: [
-      "Basic insurance included",
-      "Unlimited mileage",
-      "24/7 roadside assistance",
-      "Free cancellation (48h)",
+      "Full insurance included",
+      "Roadside assistance",
+      "Flexible pickup & drop-off",
+      "WhatsApp support",
     ],
   },
   {
-    name: "SUV & Premium",
-    description: "Comfort and space for family trips and adventures",
-    dailyRate: 55,
-    weeklyRate: 330,
+    name: "SUV",
+    description: "Comfort and space for exploring the islands",
+    dailyRate: 35,
+    weeklyRate: 210,
     popular: true,
     features: [
       "Full insurance included",
-      "Unlimited mileage",
-      "24/7 roadside assistance",
-      "Free cancellation (48h)",
+      "Roadside assistance",
+      "Flexible pickup & drop-off",
+      "WhatsApp support",
       "GPS navigation included",
-      "Additional driver free",
+      "Airport delivery",
     ],
   },
   {
-    name: "Luxury",
-    description: "Travel in style with our premium selection",
-    dailyRate: 110,
-    weeklyRate: 660,
+    name: "Off-road / 4x4",
+    description: "Built for the islands' unique terrain and trails",
+    dailyRate: 40,
+    weeklyRate: 245,
     features: [
-      "Premium insurance included",
-      "Unlimited mileage",
-      "24/7 priority roadside assistance",
-      "Free cancellation (72h)",
+      "Full insurance included",
+      "Roadside assistance",
+      "Flexible pickup & drop-off",
+      "WhatsApp support",
       "GPS navigation included",
-      "Additional driver free",
-      "Airport meet & greet",
+      "Airport delivery",
+      "Perfect for unpaved roads",
     ],
   },
 ];
 
+const featuredVehicle = {
+  name: "Suzuki Jimny",
+  image:
+    "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&h=400&fit=crop",
+  dailyRate: 40,
+  features: [
+    "Full insurance included",
+    "4x4 all-terrain capability",
+    "Roadside assistance",
+    "GPS navigation",
+    "Perfect for island roads",
+    "WhatsApp support",
+  ],
+};
+
 export function Pricing() {
-  const featuredCar = [...fleet].sort((a, b) => b.dailyRate - a.dailyRate)[0];
+  const featuredCar = featuredVehicle;
 
   const handleScrollToBooking = () => {
     document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
@@ -84,7 +98,7 @@ export function Pricing() {
             {/* Details side */}
             <div className="p-8 md:p-12 lg:p-16">
               <span className="text-xs font-semibold uppercase tracking-widest text-accent-light">
-                Featured Vehicle
+                Most Popular on the Island
               </span>
               <h3 className="mt-3 font-serif text-3xl italic text-white md:text-4xl">
                 {featuredCar.name}

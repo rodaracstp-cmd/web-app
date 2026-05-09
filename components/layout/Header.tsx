@@ -72,7 +72,7 @@ export default function Header() {
             scrolled ? "text-primary" : "text-white",
           )}
         >
-          roda
+          rôda
         </a>
 
         {/* Desktop nav */}
@@ -148,7 +148,7 @@ export default function Header() {
                 {/* Header row with logo + close */}
                 <div className="flex items-center justify-between">
                   <DialogTitle className="text-xl font-light lowercase tracking-wider text-white">
-                    roda
+                    rôda
                   </DialogTitle>
                   <DialogClose asChild>
                     <button

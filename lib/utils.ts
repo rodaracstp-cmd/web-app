@@ -25,7 +25,7 @@ export function formatDate(dateString: string): string {
 }
 
 export function formatCurrency(amount: number): string {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("pt-PT", {
     style: "currency",
     currency: "EUR",
   }).format(amount);

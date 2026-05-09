@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const CATEGORIES = ["Sedan", "SUV", "Coupe", "Convertible", "Electric", "Sports"];
+const CATEGORIES = ["Compact", "SUV", "Off-road", "Van"];
 
 export default function Hero() {
   const [location, setLocation] = useState("");
@@ -24,7 +24,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&h=1080&fit=crop')",
+            "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&h=1080&fit=crop')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/70 via-primary-dark/50 to-primary-dark/80" />
@@ -34,14 +34,19 @@ export default function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pt-32 pb-24 text-center">
         {/* Main heading */}
         <h1 className="font-serif text-5xl leading-tight text-white italic md:text-7xl md:leading-tight">
-          Luxury car
+          Discover
           <br />
-          rental in Portugal
+          São Tomé e Príncipe
         </h1>
 
+        {/* Subtitle */}
+        <p className="mt-4 text-xl font-light tracking-wide text-white/80">
+          Your Journey, Our Wheels
+        </p>
+
         {/* Tagline */}
-        <p className="mx-auto mt-6 max-w-lg text-lg text-white/60">
-          Experience the art of driving with our curated collection of premium vehicles.
+        <p className="mx-auto mt-4 max-w-lg text-lg text-white/60">
+          Explore the islands at your own pace — rent a car and discover hidden beaches, lush forests, and tropical adventures.
         </p>
 
         {/* Search bar */}
@@ -74,7 +79,7 @@ export default function Hero() {
               </svg>
               <input
                 type="text"
-                placeholder="Pickup location"
+                placeholder="e.g. São Tomé, Aeroporto, Guadalupe"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
                 className="w-full bg-transparent text-sm text-white placeholder-white/40 outline-none"

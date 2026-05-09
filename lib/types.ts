@@ -1,11 +1,12 @@
 export interface Car {
   id: string;
   name: string;
-  category: "economy" | "suv" | "luxury" | "van";
+  category: "compact" | "suv" | "offroad" | "van";
   image: string;
   passengers: number;
   transmission: "Automatic" | "Manual";
   fuel: "Petrol" | "Diesel" | "Hybrid" | "Electric";
+  fuelEfficiency: string;
   bags: number;
   doors: number;
   dailyRate: number;

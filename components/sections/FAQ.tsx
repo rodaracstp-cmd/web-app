@@ -11,42 +11,42 @@ const faqs = [
   {
     question: "What documents do I need to rent a car?",
     answer:
-      "You'll need a valid driver's license (held for at least 1 year), a valid ID or passport, and a credit card in the main driver's name. International visitors may need an International Driving Permit (IDP) depending on their country of origin.",
+      "You will need a valid passport, a driver's license (held for at least 1 year), and a credit card in the main driver's name. International visitors may also need an International Driving Permit (IDP) depending on their country of origin.",
   },
   {
-    question: "Can I cancel or modify my reservation?",
+    question: "Are the roads in São Tomé safe to drive?",
     answer:
-      "Yes! You can cancel or modify your reservation free of charge up to 48 hours before your scheduled pickup time (72 hours for luxury vehicles). Cancellations made within 48 hours may be subject to a fee.",
+      "The main roads around São Tomé city and between major towns are paved and generally in good condition. However, some roads to more remote beaches and attractions can be unpaved or have potholes, especially during the rainy season. We recommend an SUV or 4x4 if you plan to explore beyond the main routes.",
   },
   {
     question: "Is insurance included in the rental price?",
     answer:
-      "Yes, basic insurance (CDW — Collision Damage Waiver and theft protection) is included in all our rentals. You can upgrade to full coverage for additional peace of mind at a small daily supplement.",
+      "Yes! Full insurance is included on all our vehicles at no extra cost. This covers collision damage, theft protection, and third-party liability, so you can explore the islands with complete peace of mind.",
   },
   {
-    question: "What is the fuel policy?",
+    question: "Do you offer airport pickup?",
     answer:
-      "We operate a full-to-full fuel policy. You'll receive the car with a full tank and simply need to return it with a full tank. If the car isn't returned full, a refueling charge will apply.",
+      "Yes, we offer pickup and drop-off at São Tomé International Airport (TMS). Just let us know your flight details when booking and we will have your vehicle ready when you arrive. We can also deliver to hotels and other locations across the island.",
   },
   {
-    question: "Can I add an additional driver?",
+    question: "Can I drive to Príncipe?",
     answer:
-      "Yes, additional drivers can be added to your rental. For SUV & Premium and Luxury categories, one additional driver is included free of charge. For Economy vehicles, a small daily fee applies.",
+      "No, it is not possible to drive between the two islands. However, we can help you arrange ferry or flight transport to Príncipe. Contact us and we will be happy to assist with planning your inter-island trip.",
   },
   {
-    question: "What happens if I return the car late?",
+    question: "What fuel policy do you use?",
     answer:
-      "We offer a 30-minute grace period. After that, a late return fee equivalent to an extra day's rental may be charged. We recommend contacting us if you anticipate being late so we can assist you.",
+      "We operate a full-to-full fuel policy. You will receive the car with a full tank and simply need to return it with a full tank. If the car is not returned full, a refueling charge will apply.",
   },
   {
-    question: "Do you offer airport pickup and delivery?",
+    question: "Do you provide baby seats and GPS?",
     answer:
-      "Yes! We have desks at Lisbon (LIS), Porto (OPO), and Faro (FAO) airports. For luxury rentals, we also offer a complimentary meet & greet service where we bring the car directly to you at arrivals.",
+      "Yes, both baby seats and GPS devices are available upon request. Please let us know when making your reservation so we can have them ready for your pickup. There is no additional charge for GPS on SUV and 4x4 rentals.",
   },
   {
-    question: "What is the minimum age to rent a car?",
+    question: "What payment methods do you accept?",
     answer:
-      "The minimum age to rent is 21 years old. Drivers under 25 may be subject to a young driver surcharge. For luxury vehicles, the minimum age is 25.",
+      "We accept Visa, Mastercard, Apple Pay, and Google Pay. A credit card is required at the time of pickup for the security deposit. Debit cards are accepted for online reservations but not for the deposit.",
   },
 ];
 
@@ -59,7 +59,7 @@ export function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-text-muted">
-            Everything you need to know before hitting the road.
+            Everything you need to know before exploring the islands.
           </p>
         </div>
 
